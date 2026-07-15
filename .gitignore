@@ -3,6 +3,7 @@ dist/
 capture/
 .profile-*/
 .tt-profile/
+.claude/
 *.tgz
 *.log
 *cookies*.txt
