@@ -1,0 +1,44 @@
+{
+  "id": "7647741268608470285",
+  "desc": "",
+  "createTime": 1780628545,
+  "author": {
+    "id": "7098428946782848046",
+    "uniqueId": "applehunnibun",
+    "nickname": "apple",
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/avatar.jpeg",
+    "verified": false
+  },
+  "stats": {
+    "collectCount": 2,
+    "commentCount": 2,
+    "diggCount": 17,
+    "playCount": 136,
+    "shareCount": 0
+  },
+  "music": {
+    "id": "5000000000303721543",
+    "title": "Romantique (from \"En Cas De Malheur\", 1958)",
+    "authorName": "René Cloërec",
+    "duration": 30,
+    "playUrl": "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/track.mp3"
+  },
+  "video": {
+    "duration": 9,
+    "width": 720,
+    "height": 1280,
+    "ratio": "720p",
+    "cover": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast5-p-0068-tx/cover.image",
+    "dynamicCover": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast5-p-0068-tx/dynamic.image",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/maliva/tos-maliva-ve-0068c799-us/play/?a=1988",
+    "downloadAddr": "https://v16-webapp-prime.tiktok.com/video/tos/maliva/tos-maliva-ve-0068c799-us/download/?a=1988",
+    "PlayAddrStruct": {
+      "Uri": "v12044gd0000d8h3obvog65sg1b30bp0",
+      "UrlList": [
+        "https://v16-webapp-prime.tiktok.com/video/tos/maliva/tos-maliva-ve-0068c799-us/play/?a=1988",
+        "https://v19-webapp-prime.tiktok.com/video/tos/maliva/tos-maliva-ve-0068c799-us/play/?a=1988",
+        "https://www.tiktok.com/aweme/v1/play/?faid=1988&item_id=7647741268608470285&video_id=v12044gd0000d8h3obvog65sg1b30bp0"
+      ]
+    }
+  }
+}

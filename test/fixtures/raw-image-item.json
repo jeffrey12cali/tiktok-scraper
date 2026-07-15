@@ -1,0 +1,40 @@
+{
+  "id": "7600000000000000001",
+  "desc": "carousel post",
+  "createTime": 1781000000,
+  "author": {
+    "id": "7098428946782848046",
+    "uniqueId": "applehunnibun",
+    "nickname": "apple",
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/avatar.jpeg",
+    "verified": false
+  },
+  "stats": {
+    "collectCount": 1,
+    "commentCount": 0,
+    "diggCount": 5,
+    "playCount": 0,
+    "shareCount": 1
+  },
+  "music": {
+    "id": "5000000000303721544",
+    "title": "Some Track",
+    "authorName": "Some Artist",
+    "duration": 15,
+    "playUrl": "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/track2.mp3"
+  },
+  "imagePost": {
+    "images": [
+      {
+        "imageWidth": 1080,
+        "imageHeight": 1440,
+        "imageURL": { "urlList": ["https://p16-sign.tiktokcdn-us.com/img/img1.jpeg"] }
+      },
+      {
+        "imageWidth": 1080,
+        "imageHeight": 1440,
+        "imageURL": { "urlList": ["https://p16-sign.tiktokcdn-us.com/img/img2.jpeg"] }
+      }
+    ]
+  }
+}

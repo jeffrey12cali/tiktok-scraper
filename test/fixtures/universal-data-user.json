@@ -1,0 +1,17 @@
+{
+  "__DEFAULT_SCOPE__": {
+    "webapp.user-detail": {
+      "statusCode": 0,
+      "userInfo": {
+        "user": {
+          "id": "7098428946782848046",
+          "uniqueId": "applehunnibun",
+          "nickname": "apple",
+          "privateAccount": false
+        },
+        "stats": { "followerCount": 358, "followingCount": 396, "heart": 4255, "videoCount": 23 },
+        "itemList": []
+      }
+    }
+  }
+}

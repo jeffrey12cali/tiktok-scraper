@@ -1,23 +1,43 @@
 {
   "name": "tiktok-scrapper",
   "version": "0.1.0",
+  "description": "Fetch and download public TikTok profile media (posts/likes/stories) without logging in - a browser-signed, no-API-key library.",
   "type": "module",
-  "private": true,
-  "bin": {
-    "tt-scrape": "./dist/cli.js"
+  "private": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
   },
+  "files": [
+    "dist",
+    "docs",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsc -p .",
-    "cli": "tsx src/cli.ts",
-    "capture": "tsx src/capture.ts"
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
+  "keywords": [
+    "tiktok",
+    "scraper",
+    "downloader",
+    "library"
+  ],
+  "license": "ISC",
   "dependencies": {
-    "commander": "^12.1.0",
-    "patchright": "^1.61.1",
-    "playwright": "^1.48.0"
+    "patchright": "^1.61.1"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }

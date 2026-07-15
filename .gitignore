@@ -2,6 +2,8 @@ node_modules/
 dist/
 capture/
 .profile-*/
+.tt-profile/
+*.tgz
 *.log
 *cookies*.txt
 *cookies*.json
