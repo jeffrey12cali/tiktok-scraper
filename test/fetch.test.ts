@@ -11,9 +11,9 @@ function page(itemList: any[], hasMore: boolean, cursor = "0"): RawPage {
 const rawItem = (id: string) => ({ id, author: { uniqueId: "u" }, video: { playAddr: `https://cdn/${id}.mp4` } });
 
 test("normalizeUsername: strips @ and extracts from a profile URL", () => {
-  assert.equal(normalizeUsername("applehunnibun"), "applehunnibun");
-  assert.equal(normalizeUsername("@applehunnibun"), "applehunnibun");
-  assert.equal(normalizeUsername("https://www.tiktok.com/@applehunnibun?lang=en"), "applehunnibun");
+  assert.equal(normalizeUsername("exampleuser"), "exampleuser");
+  assert.equal(normalizeUsername("@exampleuser"), "exampleuser");
+  assert.equal(normalizeUsername("https://www.tiktok.com/@exampleuser?lang=en"), "exampleuser");
 });
 
 test("fetchSourcePages: single page, hasMore false -> stops without extra scrolling", async () => {
@@ -96,13 +96,13 @@ test("validateUser: parses SSR blob for private/nickname/videoCount", async () =
   const ssr = await loadFixture("universal-data-user.json");
   const fp = new FakePage([], "/api/post/item_list/");
   fp.ssrText = JSON.stringify(ssr);
-  const info = await validateUser(fp as any, "applehunnibun");
-  assert.deepEqual(info, { username: "applehunnibun", private: false, videoCount: 23, nickname: "apple" });
+  const info = await validateUser(fp as any, "exampleuser");
+  assert.deepEqual(info, { username: "exampleuser", private: false, videoCount: 23, nickname: "Example" });
 });
 
 test("validateUser: returns undefined (not throw) when SSR blob is missing", async () => {
   const fp = new FakePage([], "/api/post/item_list/");
   fp.ssrText = null;
-  const info = await validateUser(fp as any, "applehunnibun");
+  const info = await validateUser(fp as any, "exampleuser");
   assert.equal(info, undefined);
 });

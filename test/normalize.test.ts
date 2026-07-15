@@ -13,8 +13,8 @@ test("toMedia: video - candidate url order playAddr -> aweme -> downloadAddr", a
   assert.equal(item.id, "7647741268608470285");
   assert.equal(item.ext, "mp4");
   assert.equal(item.source, "posts");
-  assert.equal(item.authorUsername, "applehunnibun");
-  assert.equal(item.pageUrl, "https://www.tiktok.com/@applehunnibun/video/7647741268608470285");
+  assert.equal(item.authorUsername, "exampleuser");
+  assert.equal(item.pageUrl, "https://www.tiktok.com/@exampleuser/video/7647741268608470285");
   assert.equal(item.images, undefined);
 
   // playAddr first, then the /aweme/v1/play/ candidate from PlayAddrStruct.UrlList, then downloadAddr
@@ -60,7 +60,7 @@ test("toMeta: video - stats/author/music/kind mapped, ISO time derived", async (
     playCount: raw.stats.playCount,
     collectCount: raw.stats.collectCount,
   });
-  assert.equal(meta.author.username, "applehunnibun");
+  assert.equal(meta.author.username, "exampleuser");
   assert.equal(meta.music?.title, raw.music.title);
   assert.equal(meta.video?.duration, raw.video.duration);
   assert.equal(meta.imageCount, undefined);

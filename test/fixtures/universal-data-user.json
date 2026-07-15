@@ -4,9 +4,9 @@
       "statusCode": 0,
       "userInfo": {
         "user": {
-          "id": "7098428946782848046",
-          "uniqueId": "applehunnibun",
-          "nickname": "apple",
+          "id": "1234567890123456789",
+          "uniqueId": "exampleuser",
+          "nickname": "Example",
           "privateAccount": false
         },
         "stats": { "followerCount": 358, "followingCount": 396, "heart": 4255, "videoCount": 23 },
