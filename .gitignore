@@ -1,4 +1,8 @@
 node_modules/
 dist/
 capture/
+.profile-*/
 *.log
+*cookies*.txt
+*cookies*.json
+.env
